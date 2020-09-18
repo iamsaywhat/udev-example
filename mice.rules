@@ -1,0 +1,2 @@
+SUBSYSTEM=="input", KERNEL=="mouse*", ACTION=="add", RUN+="/etc/mice.sh '%E{DEVNAME}' '%E{ACTION}'"
+SUBSYSTEM=="input", KERNEL=="mouse*", ACTION=="remove", RUN+="/etc/mice.sh '%E{DEVNAME}' '%E{ACTION}'"
