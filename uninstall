@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if test -f "/etc/mice.sh"
+then 
+    sudo rm "/etc/mice.sh"
+fi
+if test -f "/etc/udev/rules.d/mice.rules"
+then
+    sudo rm "/etc/udev/rules.d/mice.rules"
+fi
+if test -f "/tmp/mice.log"
+then
+    sudo rm "/tmp/mice.log"
+fi
+sudo udevadm control --reload-rules

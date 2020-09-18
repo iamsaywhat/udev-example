@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo cp ./mice.sh /etc/mice.sh
+sudo cp ./mice.rules /etc/udev/rules.d/mice.rules
+sudo udevadm  control --reload-rules
